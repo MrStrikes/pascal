@@ -22,6 +22,7 @@
 		</style>
 			<table>
 				<?php
+				error_reporting(E_ALL & ~E_NOTICE);
 				if ($_POST['depth'] > 30){
 					$_POST['depth'] = 30;
 				}
